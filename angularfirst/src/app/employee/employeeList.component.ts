@@ -78,5 +78,9 @@ export class EmployeeListComponent {
         console.log(selectedRadioButtonValue)
         this.selectedEmployeeCountRadioButton = selectedRadioButtonValue;
     }
+
+    trackByEmpCode(index: number, employee: any): string {
+        return employee.code;
+    }
 }
 
