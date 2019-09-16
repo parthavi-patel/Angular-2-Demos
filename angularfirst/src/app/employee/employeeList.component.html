@@ -19,7 +19,7 @@
             <tr *ngIf="selectedEmployeeCountRadioButton=='All' ||
                        selectedEmployeeCountRadioButton==employee.gender">
                 <td>{{employee.code}}</td>
-                <td>{{employee.name}}</td>
+                <td>{{employee.name | employeeTitle:employee.gender}}</td>
                 <td>{{employee.gender}}</td>
                 <td>{{employee.annualSalary}}</td>
                 <td>{{employee.dateOfBirth}}</td>
